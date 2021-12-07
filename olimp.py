@@ -10,13 +10,29 @@ def participant():
     return set(li)
 
 
+def dliname(n):
+    g=-1
+    dl=0
+    for k in range(len(n)):
+        if n[k]==' ':
+            g=k
+            break
+    for i in range(g+1, len(n)):
+        dl+=1
+        if n[i]==' ':
+            dl-=1
+            break
+    return dl
+
+
 def numb(arr):
     arr1=list(arr)
     global dt
     for i in range(len(arr1)):
-        k=str(i)+'_'+arr1[i][0]+'_'+str(len(arr1[i]))
+        k=str(i+1)+'_'+arr1[i][0]+'_'+str(dliname(arr1[i]))
         dt[k]=arr1[i]
     return
+
 
 
 spet=('матиматика', 'информаника', 'физика')
@@ -27,7 +43,7 @@ dt={}
 kl1, kl2=0, 0
 
 for i in spet:
-    print ('Введите участников олимпиады по направлению "{}". Когда закончите введите ещё раз Enter'.format(i))
+    print ('Введите ФИО участников олимпиады по направлению "{}". Когда закончите введите ещё раз Enter'.format(i))
     _list[i]=participant()
     vse = vse| _list[i]
     if un==set():
