@@ -34,7 +34,6 @@ def numb(arr):
     return
 
 
-
 spet=('матиматика', 'информаника', 'физика')
 _list={}
 vse=set()
