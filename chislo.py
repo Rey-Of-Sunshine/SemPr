@@ -19,6 +19,6 @@ while ptk < 5:
         break
 
 if ch == number:
-    print ('Ух ты, {0}! Ты угадал число, использовав {1} попыток!'.format(name, guesses_made))
+    print ('Ух ты, {0}! Ты угадал число, использовав {1} попыток!'.format(name, ptk))
 else:
     print ('А вот и не угадал! Я загадал число {0}'.format(number))
