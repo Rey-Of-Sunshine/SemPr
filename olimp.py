@@ -27,6 +27,7 @@ def dliname(n):
 
 def numb(arr):
     arr1=list(arr)
+    a, b=0, 0
     global dt
     for i in range(len(arr1)):
         k=str(i+1)+'_'+arr1[i][0]+'_'+str(dliname(arr1[i]))
@@ -56,13 +57,12 @@ print('Участников олимпиад всего: {} \n Участвов�
 numb(vse)
 print (dt)
 
-for i in spet:
-    print ('Введите баллы участников олимпиады по направлению "{}". Когда закончите введите ещё раз Enter'.format(i))
-    for j in _list[i]:
+for i in range(len(spet)):
+    print ('Введите баллы участников олимпиады по направлению "{}". Когда закончите введите ещё раз Enter'.format(spet(i)))
+    ball.append()
+    for j in range(len(_list[i])):
+        ball[i].append()
         print(_list[i][j], end=' ')
         ball[i][j]=input()
-    _list[i]=participant()
-    vse = vse| _list[i]
-    if un==set():
-        un= un| _list[i]
-    un= un & _list[i]
+        
+    
